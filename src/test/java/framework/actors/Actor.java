@@ -131,8 +131,8 @@ public abstract class Actor {
      * This one works for all of the browsers
      * Override it for the API Actor
      *
-     * @return
-     * @throws NoSuchFieldException
+     * @return a string that the actor can use to get a resource
+     * @throws NoSuchFieldException - when you have not set up the configuration as expected
      */
     public String deriveBaseUrl() throws NoSuchFieldException {
         return ContextOfTest.sutConfiguration.getProperty("uiProtocol") + "://" + ContextOfTest.sutConfiguration.getProperty("uiDomainName");
@@ -142,7 +142,7 @@ public abstract class Actor {
      * Use this with the API Actor is the operating Actor, so that the response can be analysed
      * Otherwise (e.g. for th browser actors) the response will be null (initial value of the httpResponse)
      *
-     * @return
+     * @return - Whatever the server has sent back
      */
     public CloseableHttpResponse getResponse() {
         return httpResponse;
@@ -157,6 +157,7 @@ public abstract class Actor {
     /**
      * When looking at web pages, the implicit wait may not be sufficient,
      * so explicitly ask the browser if it thinks it has got everything
+     * This is a dynamic wait and will terminate early if the page is there
      *
      * @param maxWaitSeconds -
      */

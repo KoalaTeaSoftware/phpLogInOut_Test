@@ -19,7 +19,7 @@ import org.junit.runner.RunWith;
                 // see https://gitlab.com/monochromata-de/cucumber-reporting-plugin
                 "de.monochromata.cucumber.report.PrettyReports:target/"
         }
-        , tags = "@framework"
+        , tags = "@login"
 //        ,dryRun = true
 )
 
