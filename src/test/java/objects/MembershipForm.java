@@ -8,8 +8,8 @@ public class MembershipForm extends SeleniumPageFactory {
 
     @FindBy(id = "membershipForm")
     private WebElement logInForm;
-    @FindBy(id = "errorFlag")
-    private WebElement errorFlag;
+    @FindBy(id = "status")
+    private WebElement statusMessage;
     @FindBy(id = "emailAddress")
     private WebElement emailAddressField;
     @FindBy(id = "pwd")
@@ -59,7 +59,16 @@ public class MembershipForm extends SeleniumPageFactory {
         }
     }
 
-    public String getErrorFlag() {
-        return errorFlag.getAttribute("value");
+    public String getStatusMessage() {
+        return statusMessage.getText();
     }
+
+    public String getEmailAddressField() {
+        return emailAddressField.getAttribute("value");
+    }
+
+    public String getPasswordField() {
+        return passwordField.getAttribute("value");
+    }
+
 }

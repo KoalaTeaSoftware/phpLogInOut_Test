@@ -1,0 +1,3609 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4018346800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I go to the home page",
+            "match": {
+              "location": "testSteps.Navigation.iGoToTheHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-23T11:14:55.439Z",
+        "before": [
+          {
+            "output": [
+              "[info] Won\u0027t be catching browser logs"
+            ],
+            "result": {
+              "duration": 6106296500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "framework.Hooks.beforeScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Not logged-in view",
+        "description": "",
+        "id": "login-form;not-logged-in-view",
+        "after": [
+          {
+            "result": {
+              "duration": 557589400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "framework.Hooks.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 30096007000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I am not logged in",
+            "match": {
+              "location": "testSteps.Membership.iAmNotLoggedIn()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 30006100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I see the login form",
+            "match": {
+              "location": "testSteps.Membership.iSeeTheLoginForm()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 25077000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "the password field contains \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 28
+                }
+              ],
+              "location": "testSteps.Membership.thePasswordFieldContains(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 23709900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "the email field contains \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 25
+                }
+              ],
+              "location": "testSteps.Membership.theEmailFieldContains(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30036810400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I do not see the logout form",
+            "match": {
+              "location": "testSteps.Membership.iDoNotSeeTheLogoutForm()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1711954500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I go to the home page",
+            "match": {
+              "location": "testSteps.Navigation.iGoToTheHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-23T11:16:06.438Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5055111800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "framework.Hooks.beforeScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 29,
+        "name": "Miss out credentials when logging in",
+        "description": "",
+        "id": "login-form;miss-out-credentials-when-logging-in;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 562638400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "framework.Hooks.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 30096857700,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I am not logged in",
+            "match": {
+              "location": "testSteps.Membership.iAmNotLoggedIn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 55473800,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I provide email \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 16
+                }
+              ],
+              "location": "testSteps.Membership.iProvideEmail(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 52733400,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I provide password \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 19
+                }
+              ],
+              "location": "testSteps.Membership.iProvidePassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 52356600,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I log in",
+            "match": {
+              "location": "testSteps.Membership.iLogIn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1161001100,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I see the login form",
+            "match": {
+              "location": "testSteps.Membership.iSeeTheLoginForm()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 27004500,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I see that the problem is \"missed credentials\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"missed credentials\"",
+                  "offset": 26
+                }
+              ],
+              "location": "testSteps.Membership.iSeeThatTheProblemIs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20096100,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "the password field contains \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 28
+                }
+              ],
+              "location": "testSteps.Membership.thePasswordFieldContains(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17000300,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "the email field contains \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 25
+                }
+              ],
+              "location": "testSteps.Membership.theEmailFieldContains(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30039307500,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I do not see the logout form",
+            "match": {
+              "location": "testSteps.Membership.iDoNotSeeTheLogoutForm()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1714061100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I go to the home page",
+            "match": {
+              "location": "testSteps.Navigation.iGoToTheHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-23T11:17:15.299Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5054165500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "framework.Hooks.beforeScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "Miss out credentials when logging in",
+        "description": "",
+        "id": "login-form;miss-out-credentials-when-logging-in;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 560727200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "framework.Hooks.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 30048788100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I am not logged in",
+            "match": {
+              "location": "testSteps.Membership.iAmNotLoggedIn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 67999600,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I provide email \"a@b.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"a@b.com\"",
+                  "offset": 16
+                }
+              ],
+              "location": "testSteps.Membership.iProvideEmail(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 52000100,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I provide password \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 19
+                }
+              ],
+              "location": "testSteps.Membership.iProvidePassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 51999900,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I log in",
+            "match": {
+              "location": "testSteps.Membership.iLogIn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1151734100,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I see the login form",
+            "match": {
+              "location": "testSteps.Membership.iSeeTheLoginForm()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 29023900,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I see that the problem is \"missed credentials\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"missed credentials\"",
+                  "offset": 26
+                }
+              ],
+              "location": "testSteps.Membership.iSeeThatTheProblemIs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18981400,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "the password field contains \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 28
+                }
+              ],
+              "location": "testSteps.Membership.thePasswordFieldContains(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 19013600,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "the email field contains \"a@b.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"a@b.com\"",
+                  "offset": 25
+                }
+              ],
+              "location": "testSteps.Membership.theEmailFieldContains(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30021203800,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I do not see the logout form",
+            "match": {
+              "location": "testSteps.Membership.iDoNotSeeTheLogoutForm()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1719604700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I go to the home page",
+            "match": {
+              "location": "testSteps.Navigation.iGoToTheHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-23T11:18:24.096Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5050880200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "framework.Hooks.beforeScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "Miss out credentials when logging in",
+        "description": "",
+        "id": "login-form;miss-out-credentials-when-logging-in;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 557808600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "framework.Hooks.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 30069589100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I am not logged in",
+            "match": {
+              "location": "testSteps.Membership.iAmNotLoggedIn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 49632100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I provide email \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 16
+                }
+              ],
+              "location": "testSteps.Membership.iProvideEmail(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 67002700,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I provide password \"qwerty\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"qwerty\"",
+                  "offset": 19
+                }
+              ],
+              "location": "testSteps.Membership.iProvidePassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 67750600,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I log in",
+            "match": {
+              "location": "testSteps.Membership.iLogIn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1194416800,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "I see the login form",
+            "match": {
+              "location": "testSteps.Membership.iSeeTheLoginForm()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 30017800,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "I see that the problem is \"missed credentials\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"missed credentials\"",
+                  "offset": 26
+                }
+              ],
+              "location": "testSteps.Membership.iSeeThatTheProblemIs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18999000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "the password field contains \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 28
+                }
+              ],
+              "location": "testSteps.Membership.thePasswordFieldContains(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "the email field contains \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 25
+                }
+              ],
+              "location": "testSteps.Membership.theEmailFieldContains(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30049211200,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "I do not see the logout form",
+            "match": {
+              "location": "testSteps.Membership.iDoNotSeeTheLogoutForm()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1735854600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I go to the home page",
+            "match": {
+              "location": "testSteps.Navigation.iGoToTheHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-23T11:19:33.004Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5049622900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "framework.Hooks.beforeScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 45,
+        "name": "Miss out credentials when signing in",
+        "description": "",
+        "id": "login-form;miss-out-credentials-when-signing-in;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 557857400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "framework.Hooks.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 30079882900,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I am not logged in",
+            "match": {
+              "location": "testSteps.Membership.iAmNotLoggedIn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 50264200,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I provide email \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 16
+                }
+              ],
+              "location": "testSteps.Membership.iProvideEmail(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 51723700,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I provide password \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 19
+                }
+              ],
+              "location": "testSteps.Membership.iProvidePassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 52722600,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I sign up",
+            "match": {
+              "location": "testSteps.Membership.iSignUp()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1191454400,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I see the login form",
+            "match": {
+              "location": "testSteps.Membership.iSeeTheLoginForm()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 27958200,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I see that the problem is \"missed credentials\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"missed credentials\"",
+                  "offset": 26
+                }
+              ],
+              "location": "testSteps.Membership.iSeeThatTheProblemIs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18727700,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "the password field contains \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 28
+                }
+              ],
+              "location": "testSteps.Membership.thePasswordFieldContains(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20145600,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "the email field contains \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 25
+                }
+              ],
+              "location": "testSteps.Membership.theEmailFieldContains(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30019762700,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "I do not see the logout form",
+            "match": {
+              "location": "testSteps.Membership.iDoNotSeeTheLogoutForm()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1761038600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I go to the home page",
+            "match": {
+              "location": "testSteps.Navigation.iGoToTheHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-23T11:20:41.869Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5059420200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "framework.Hooks.beforeScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 46,
+        "name": "Miss out credentials when signing in",
+        "description": "",
+        "id": "login-form;miss-out-credentials-when-signing-in;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 556852900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "framework.Hooks.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 30067142000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I am not logged in",
+            "match": {
+              "location": "testSteps.Membership.iAmNotLoggedIn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 69676300,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I provide email \"a@b.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"a@b.com\"",
+                  "offset": 16
+                }
+              ],
+              "location": "testSteps.Membership.iProvideEmail(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 50934400,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I provide password \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 19
+                }
+              ],
+              "location": "testSteps.Membership.iProvidePassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 55739100,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I sign up",
+            "match": {
+              "location": "testSteps.Membership.iSignUp()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1366516600,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I see the login form",
+            "match": {
+              "location": "testSteps.Membership.iSeeTheLoginForm()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 28013600,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I see that the problem is \"missed credentials\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"missed credentials\"",
+                  "offset": 26
+                }
+              ],
+              "location": "testSteps.Membership.iSeeThatTheProblemIs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20078700,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "the password field contains \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 28
+                }
+              ],
+              "location": "testSteps.Membership.thePasswordFieldContains(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 19675900,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "the email field contains \"a@b.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"a@b.com\"",
+                  "offset": 25
+                }
+              ],
+              "location": "testSteps.Membership.theEmailFieldContains(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30027879200,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "I do not see the logout form",
+            "match": {
+              "location": "testSteps.Membership.iDoNotSeeTheLogoutForm()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1699661300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I go to the home page",
+            "match": {
+              "location": "testSteps.Navigation.iGoToTheHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-23T11:21:50.956Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5057770000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "framework.Hooks.beforeScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 47,
+        "name": "Miss out credentials when signing in",
+        "description": "",
+        "id": "login-form;miss-out-credentials-when-signing-in;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 558111800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "framework.Hooks.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 30069869800,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "I am not logged in",
+            "match": {
+              "location": "testSteps.Membership.iAmNotLoggedIn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 49155400,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "I provide email \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 16
+                }
+              ],
+              "location": "testSteps.Membership.iProvideEmail(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 67147700,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "I provide password \"qwerty\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"qwerty\"",
+                  "offset": 19
+                }
+              ],
+              "location": "testSteps.Membership.iProvidePassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 62139400,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "I sign up",
+            "match": {
+              "location": "testSteps.Membership.iSignUp()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1268011400,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "I see the login form",
+            "match": {
+              "location": "testSteps.Membership.iSeeTheLoginForm()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 26733500,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "I see that the problem is \"missed credentials\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"missed credentials\"",
+                  "offset": 26
+                }
+              ],
+              "location": "testSteps.Membership.iSeeThatTheProblemIs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18993200,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "the password field contains \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 28
+                }
+              ],
+              "location": "testSteps.Membership.thePasswordFieldContains(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20002700,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "the email field contains \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 25
+                }
+              ],
+              "location": "testSteps.Membership.theEmailFieldContains(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30008835600,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "I do not see the logout form",
+            "match": {
+              "location": "testSteps.Membership.iDoNotSeeTheLogoutForm()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1734555300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I go to the home page",
+            "match": {
+              "location": "testSteps.Navigation.iGoToTheHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-23T11:22:59.868Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5051764400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "framework.Hooks.beforeScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 79,
+        "name": "Bad credentials when logging in",
+        "description": "  The password has to be a reasonable length, and be nothing other than letters and numbers\n  ToDo:\n  - The UI will prevent the user from clicking either button if the email address is not a valid email\n  - So more thought is needed to envisage different tests proper UI, and malicious attempts (bypassing the UI)",
+        "id": "login-form;bad-credentials-when-logging-in;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 558431700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "framework.Hooks.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 30087857800,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "I am not logged in",
+            "match": {
+              "location": "testSteps.Membership.iAmNotLoggedIn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 70997600,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "I provide email \"a@b.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"a@b.com\"",
+                  "offset": 16
+                }
+              ],
+              "location": "testSteps.Membership.iProvideEmail(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 56520300,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "I provide password \"a\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"a\"",
+                  "offset": 19
+                }
+              ],
+              "location": "testSteps.Membership.iProvidePassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 68397500,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "I log in",
+            "match": {
+              "location": "testSteps.Membership.iLogIn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1136202200,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "I see the login form",
+            "match": {
+              "location": "testSteps.Membership.iSeeTheLoginForm()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 28935700,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "I see that the problem is \"bad credentials\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"bad credentials\"",
+                  "offset": 26
+                }
+              ],
+              "location": "testSteps.Membership.iSeeThatTheProblemIs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18018400,
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "the password field contains \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 28
+                }
+              ],
+              "location": "testSteps.Membership.thePasswordFieldContains(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20087800,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "the email field contains \"a@b.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"a@b.com\"",
+                  "offset": 25
+                }
+              ],
+              "location": "testSteps.Membership.theEmailFieldContains(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30047118800,
+              "status": "passed"
+            },
+            "line": 76,
+            "name": "I do not see the logout form",
+            "match": {
+              "location": "testSteps.Membership.iDoNotSeeTheLogoutForm()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1727127800,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I go to the home page",
+            "match": {
+              "location": "testSteps.Navigation.iGoToTheHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-23T11:24:08.760Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5052257500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "framework.Hooks.beforeScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 80,
+        "name": "Bad credentials when logging in",
+        "description": "  The password has to be a reasonable length, and be nothing other than letters and numbers\n  ToDo:\n  - The UI will prevent the user from clicking either button if the email address is not a valid email\n  - So more thought is needed to envisage different tests proper UI, and malicious attempts (bypassing the UI)",
+        "id": "login-form;bad-credentials-when-logging-in;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 558026700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "framework.Hooks.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 30060239200,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "I am not logged in",
+            "match": {
+              "location": "testSteps.Membership.iAmNotLoggedIn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 73778800,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "I provide email \"a@b.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"a@b.com\"",
+                  "offset": 16
+                }
+              ],
+              "location": "testSteps.Membership.iProvideEmail(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 61988500,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "I provide password \"qf~\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"qf~\"",
+                  "offset": 19
+                }
+              ],
+              "location": "testSteps.Membership.iProvidePassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 53000700,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "I log in",
+            "match": {
+              "location": "testSteps.Membership.iLogIn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1225380800,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "I see the login form",
+            "match": {
+              "location": "testSteps.Membership.iSeeTheLoginForm()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 25490200,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "I see that the problem is \"bad credentials\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"bad credentials\"",
+                  "offset": 26
+                }
+              ],
+              "location": "testSteps.Membership.iSeeThatTheProblemIs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20002300,
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "the password field contains \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 28
+                }
+              ],
+              "location": "testSteps.Membership.thePasswordFieldContains(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 19119400,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "the email field contains \"a@b.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"a@b.com\"",
+                  "offset": 25
+                }
+              ],
+              "location": "testSteps.Membership.theEmailFieldContains(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30013727700,
+              "status": "passed"
+            },
+            "line": 76,
+            "name": "I do not see the logout form",
+            "match": {
+              "location": "testSteps.Membership.iDoNotSeeTheLogoutForm()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1712467100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I go to the home page",
+            "match": {
+              "location": "testSteps.Navigation.iGoToTheHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-23T11:25:17.657Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5064847100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "framework.Hooks.beforeScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 81,
+        "name": "Bad credentials when logging in",
+        "description": "  The password has to be a reasonable length, and be nothing other than letters and numbers\n  ToDo:\n  - The UI will prevent the user from clicking either button if the email address is not a valid email\n  - So more thought is needed to envisage different tests proper UI, and malicious attempts (bypassing the UI)",
+        "id": "login-form;bad-credentials-when-logging-in;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 562898600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "framework.Hooks.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 30091888400,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "I am not logged in",
+            "match": {
+              "location": "testSteps.Membership.iAmNotLoggedIn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 70073400,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "I provide email \"a@b.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"a@b.com\"",
+                  "offset": 16
+                }
+              ],
+              "location": "testSteps.Membership.iProvideEmail(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 58129200,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "I provide password \"~\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"~\"",
+                  "offset": 19
+                }
+              ],
+              "location": "testSteps.Membership.iProvidePassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 65451000,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "I log in",
+            "match": {
+              "location": "testSteps.Membership.iLogIn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1232193500,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "I see the login form",
+            "match": {
+              "location": "testSteps.Membership.iSeeTheLoginForm()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 26999900,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "I see that the problem is \"bad credentials\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"bad credentials\"",
+                  "offset": 26
+                }
+              ],
+              "location": "testSteps.Membership.iSeeThatTheProblemIs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17626500,
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "the password field contains \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 28
+                }
+              ],
+              "location": "testSteps.Membership.thePasswordFieldContains(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18000200,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "the email field contains \"a@b.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"a@b.com\"",
+                  "offset": 25
+                }
+              ],
+              "location": "testSteps.Membership.theEmailFieldContains(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30054280100,
+              "status": "passed"
+            },
+            "line": 76,
+            "name": "I do not see the logout form",
+            "match": {
+              "location": "testSteps.Membership.iDoNotSeeTheLogoutForm()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1747765400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I go to the home page",
+            "match": {
+              "location": "testSteps.Navigation.iGoToTheHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-23T11:26:26.637Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5050817900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "framework.Hooks.beforeScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 82,
+        "name": "Bad credentials when logging in",
+        "description": "  The password has to be a reasonable length, and be nothing other than letters and numbers\n  ToDo:\n  - The UI will prevent the user from clicking either button if the email address is not a valid email\n  - So more thought is needed to envisage different tests proper UI, and malicious attempts (bypassing the UI)",
+        "id": "login-form;bad-credentials-when-logging-in;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 562184400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "framework.Hooks.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 30092867700,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "I am not logged in",
+            "match": {
+              "location": "testSteps.Membership.iAmNotLoggedIn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 70992800,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "I provide email \"a@b.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"a@b.com\"",
+                  "offset": 16
+                }
+              ],
+              "location": "testSteps.Membership.iProvideEmail(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 65000900,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "I provide password \"qwe rt\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"qwe rt\"",
+                  "offset": 19
+                }
+              ],
+              "location": "testSteps.Membership.iProvidePassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 68143300,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "I log in",
+            "match": {
+              "location": "testSteps.Membership.iLogIn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1224769100,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "I see the login form",
+            "match": {
+              "location": "testSteps.Membership.iSeeTheLoginForm()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 25997300,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "I see that the problem is \"bad credentials\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"bad credentials\"",
+                  "offset": 26
+                }
+              ],
+              "location": "testSteps.Membership.iSeeThatTheProblemIs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17990000,
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "the password field contains \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 28
+                }
+              ],
+              "location": "testSteps.Membership.thePasswordFieldContains(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 19005100,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "the email field contains \"a@b.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"a@b.com\"",
+                  "offset": 25
+                }
+              ],
+              "location": "testSteps.Membership.theEmailFieldContains(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30012850200,
+              "status": "passed"
+            },
+            "line": 76,
+            "name": "I do not see the logout form",
+            "match": {
+              "location": "testSteps.Membership.iDoNotSeeTheLogoutForm()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1732937300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I go to the home page",
+            "match": {
+              "location": "testSteps.Navigation.iGoToTheHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-23T11:27:35.602Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5049213000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "framework.Hooks.beforeScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 100,
+        "name": "Bad credentials when signing in",
+        "description": "  The password has to be a reasonable length, and be nothing other than letters and numbers\n  ToDo:\n  - The UI will prevent the user from clicking either button if the email address is not a valid email\n  - So more thought is needed to envisage different tests proper UI, and malicious attempts (bypassing the UI)",
+        "id": "login-form;bad-credentials-when-signing-in;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 565096800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "framework.Hooks.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 30055942100,
+              "status": "passed"
+            },
+            "line": 89,
+            "name": "I am not logged in",
+            "match": {
+              "location": "testSteps.Membership.iAmNotLoggedIn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 72605800,
+              "status": "passed"
+            },
+            "line": 90,
+            "name": "I provide email \"a@b.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"a@b.com\"",
+                  "offset": 16
+                }
+              ],
+              "location": "testSteps.Membership.iProvideEmail(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 53699500,
+              "status": "passed"
+            },
+            "line": 91,
+            "name": "I provide password \"a\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"a\"",
+                  "offset": 19
+                }
+              ],
+              "location": "testSteps.Membership.iProvidePassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63068600,
+              "status": "passed"
+            },
+            "line": 92,
+            "name": "I sign up",
+            "match": {
+              "location": "testSteps.Membership.iSignUp()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1244088200,
+              "status": "passed"
+            },
+            "line": 93,
+            "name": "I see the login form",
+            "match": {
+              "location": "testSteps.Membership.iSeeTheLoginForm()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 28018300,
+              "status": "passed"
+            },
+            "line": 94,
+            "name": "I see that the problem is \"bad credentials\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"bad credentials\"",
+                  "offset": 26
+                }
+              ],
+              "location": "testSteps.Membership.iSeeThatTheProblemIs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 19067700,
+              "status": "passed"
+            },
+            "line": 95,
+            "name": "the password field contains \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 28
+                }
+              ],
+              "location": "testSteps.Membership.thePasswordFieldContains(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18344400,
+              "status": "passed"
+            },
+            "line": 96,
+            "name": "the email field contains \"a@b.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"a@b.com\"",
+                  "offset": 25
+                }
+              ],
+              "location": "testSteps.Membership.theEmailFieldContains(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30011135600,
+              "status": "passed"
+            },
+            "line": 97,
+            "name": "I do not see the logout form",
+            "match": {
+              "location": "testSteps.Membership.iDoNotSeeTheLogoutForm()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1837232900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I go to the home page",
+            "match": {
+              "location": "testSteps.Navigation.iGoToTheHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-23T11:28:44.524Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5048993700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "framework.Hooks.beforeScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 101,
+        "name": "Bad credentials when signing in",
+        "description": "  The password has to be a reasonable length, and be nothing other than letters and numbers\n  ToDo:\n  - The UI will prevent the user from clicking either button if the email address is not a valid email\n  - So more thought is needed to envisage different tests proper UI, and malicious attempts (bypassing the UI)",
+        "id": "login-form;bad-credentials-when-signing-in;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 556307500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "framework.Hooks.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 30087904400,
+              "status": "passed"
+            },
+            "line": 89,
+            "name": "I am not logged in",
+            "match": {
+              "location": "testSteps.Membership.iAmNotLoggedIn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 70830400,
+              "status": "passed"
+            },
+            "line": 90,
+            "name": "I provide email \"a@b.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"a@b.com\"",
+                  "offset": 16
+                }
+              ],
+              "location": "testSteps.Membership.iProvideEmail(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 87002300,
+              "status": "passed"
+            },
+            "line": 91,
+            "name": "I provide password \"qwertyuiopasdfg\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"qwertyuiopasdfg\"",
+                  "offset": 19
+                }
+              ],
+              "location": "testSteps.Membership.iProvidePassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 56005000,
+              "status": "passed"
+            },
+            "line": 92,
+            "name": "I sign up",
+            "match": {
+              "location": "testSteps.Membership.iSignUp()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1195867100,
+              "status": "passed"
+            },
+            "line": 93,
+            "name": "I see the login form",
+            "match": {
+              "location": "testSteps.Membership.iSeeTheLoginForm()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 26361400,
+              "status": "passed"
+            },
+            "line": 94,
+            "name": "I see that the problem is \"bad credentials\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"bad credentials\"",
+                  "offset": 26
+                }
+              ],
+              "location": "testSteps.Membership.iSeeThatTheProblemIs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17005000,
+              "status": "passed"
+            },
+            "line": 95,
+            "name": "the password field contains \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 28
+                }
+              ],
+              "location": "testSteps.Membership.thePasswordFieldContains(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 19911700,
+              "status": "passed"
+            },
+            "line": 96,
+            "name": "the email field contains \"a@b.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"a@b.com\"",
+                  "offset": 25
+                }
+              ],
+              "location": "testSteps.Membership.theEmailFieldContains(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30029747900,
+              "status": "passed"
+            },
+            "line": 97,
+            "name": "I do not see the logout form",
+            "match": {
+              "location": "testSteps.Membership.iDoNotSeeTheLogoutForm()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1705452600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I go to the home page",
+            "match": {
+              "location": "testSteps.Navigation.iGoToTheHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-23T11:29:53.563Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5043647600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "framework.Hooks.beforeScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 102,
+        "name": "Bad credentials when signing in",
+        "description": "  The password has to be a reasonable length, and be nothing other than letters and numbers\n  ToDo:\n  - The UI will prevent the user from clicking either button if the email address is not a valid email\n  - So more thought is needed to envisage different tests proper UI, and malicious attempts (bypassing the UI)",
+        "id": "login-form;bad-credentials-when-signing-in;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 556187700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "framework.Hooks.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 30075367200,
+              "status": "passed"
+            },
+            "line": 89,
+            "name": "I am not logged in",
+            "match": {
+              "location": "testSteps.Membership.iAmNotLoggedIn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 72284300,
+              "status": "passed"
+            },
+            "line": 90,
+            "name": "I provide email \"a@b.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"a@b.com\"",
+                  "offset": 16
+                }
+              ],
+              "location": "testSteps.Membership.iProvideEmail(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 61297400,
+              "status": "passed"
+            },
+            "line": 91,
+            "name": "I provide password \"qf~\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"qf~\"",
+                  "offset": 19
+                }
+              ],
+              "location": "testSteps.Membership.iProvidePassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 53985500,
+              "status": "passed"
+            },
+            "line": 92,
+            "name": "I sign up",
+            "match": {
+              "location": "testSteps.Membership.iSignUp()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1153854400,
+              "status": "passed"
+            },
+            "line": 93,
+            "name": "I see the login form",
+            "match": {
+              "location": "testSteps.Membership.iSeeTheLoginForm()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 25283200,
+              "status": "passed"
+            },
+            "line": 94,
+            "name": "I see that the problem is \"bad credentials\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"bad credentials\"",
+                  "offset": 26
+                }
+              ],
+              "location": "testSteps.Membership.iSeeThatTheProblemIs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17014400,
+              "status": "passed"
+            },
+            "line": 95,
+            "name": "the password field contains \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 28
+                }
+              ],
+              "location": "testSteps.Membership.thePasswordFieldContains(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17054100,
+              "status": "passed"
+            },
+            "line": 96,
+            "name": "the email field contains \"a@b.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"a@b.com\"",
+                  "offset": 25
+                }
+              ],
+              "location": "testSteps.Membership.theEmailFieldContains(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30026335000,
+              "status": "passed"
+            },
+            "line": 97,
+            "name": "I do not see the logout form",
+            "match": {
+              "location": "testSteps.Membership.iDoNotSeeTheLogoutForm()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1721111400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I go to the home page",
+            "match": {
+              "location": "testSteps.Navigation.iGoToTheHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-23T11:31:02.379Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5052322400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "framework.Hooks.beforeScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 103,
+        "name": "Bad credentials when signing in",
+        "description": "  The password has to be a reasonable length, and be nothing other than letters and numbers\n  ToDo:\n  - The UI will prevent the user from clicking either button if the email address is not a valid email\n  - So more thought is needed to envisage different tests proper UI, and malicious attempts (bypassing the UI)",
+        "id": "login-form;bad-credentials-when-signing-in;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 562591700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "framework.Hooks.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 30054112200,
+              "status": "passed"
+            },
+            "line": 89,
+            "name": "I am not logged in",
+            "match": {
+              "location": "testSteps.Membership.iAmNotLoggedIn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 70998400,
+              "status": "passed"
+            },
+            "line": 90,
+            "name": "I provide email \"a@b.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"a@b.com\"",
+                  "offset": 16
+                }
+              ],
+              "location": "testSteps.Membership.iProvideEmail(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 53017400,
+              "status": "passed"
+            },
+            "line": 91,
+            "name": "I provide password \"~\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"~\"",
+                  "offset": 19
+                }
+              ],
+              "location": "testSteps.Membership.iProvidePassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 55994700,
+              "status": "passed"
+            },
+            "line": 92,
+            "name": "I sign up",
+            "match": {
+              "location": "testSteps.Membership.iSignUp()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1280251900,
+              "status": "passed"
+            },
+            "line": 93,
+            "name": "I see the login form",
+            "match": {
+              "location": "testSteps.Membership.iSeeTheLoginForm()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 27017300,
+              "status": "passed"
+            },
+            "line": 94,
+            "name": "I see that the problem is \"bad credentials\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"bad credentials\"",
+                  "offset": 26
+                }
+              ],
+              "location": "testSteps.Membership.iSeeThatTheProblemIs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18993900,
+              "status": "passed"
+            },
+            "line": 95,
+            "name": "the password field contains \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 28
+                }
+              ],
+              "location": "testSteps.Membership.thePasswordFieldContains(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18014800,
+              "status": "passed"
+            },
+            "line": 96,
+            "name": "the email field contains \"a@b.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"a@b.com\"",
+                  "offset": 25
+                }
+              ],
+              "location": "testSteps.Membership.theEmailFieldContains(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30046492300,
+              "status": "passed"
+            },
+            "line": 97,
+            "name": "I do not see the logout form",
+            "match": {
+              "location": "testSteps.Membership.iDoNotSeeTheLogoutForm()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1681549200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I go to the home page",
+            "match": {
+              "location": "testSteps.Navigation.iGoToTheHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-23T11:32:11.347Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5048849200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "framework.Hooks.beforeScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 104,
+        "name": "Bad credentials when signing in",
+        "description": "  The password has to be a reasonable length, and be nothing other than letters and numbers\n  ToDo:\n  - The UI will prevent the user from clicking either button if the email address is not a valid email\n  - So more thought is needed to envisage different tests proper UI, and malicious attempts (bypassing the UI)",
+        "id": "login-form;bad-credentials-when-signing-in;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 559062300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "framework.Hooks.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 30065383100,
+              "status": "passed"
+            },
+            "line": 89,
+            "name": "I am not logged in",
+            "match": {
+              "location": "testSteps.Membership.iAmNotLoggedIn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 72367400,
+              "status": "passed"
+            },
+            "line": 90,
+            "name": "I provide email \"a@b.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"a@b.com\"",
+                  "offset": 16
+                }
+              ],
+              "location": "testSteps.Membership.iProvideEmail(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 63998600,
+              "status": "passed"
+            },
+            "line": 91,
+            "name": "I provide password \"qwe rt\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"qwe rt\"",
+                  "offset": 19
+                }
+              ],
+              "location": "testSteps.Membership.iProvidePassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 57111400,
+              "status": "passed"
+            },
+            "line": 92,
+            "name": "I sign up",
+            "match": {
+              "location": "testSteps.Membership.iSignUp()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1176661100,
+              "status": "passed"
+            },
+            "line": 93,
+            "name": "I see the login form",
+            "match": {
+              "location": "testSteps.Membership.iSeeTheLoginForm()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 27137500,
+              "status": "passed"
+            },
+            "line": 94,
+            "name": "I see that the problem is \"bad credentials\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"bad credentials\"",
+                  "offset": 26
+                }
+              ],
+              "location": "testSteps.Membership.iSeeThatTheProblemIs(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 19016400,
+              "status": "passed"
+            },
+            "line": 95,
+            "name": "the password field contains \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 28
+                }
+              ],
+              "location": "testSteps.Membership.thePasswordFieldContains(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 20117500,
+              "status": "passed"
+            },
+            "line": 96,
+            "name": "the email field contains \"a@b.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"a@b.com\"",
+                  "offset": 25
+                }
+              ],
+              "location": "testSteps.Membership.theEmailFieldContains(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 30007134200,
+              "status": "passed"
+            },
+            "line": 97,
+            "name": "I do not see the logout form",
+            "match": {
+              "location": "testSteps.Membership.iDoNotSeeTheLogoutForm()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1695900900,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I go to the home page",
+            "match": {
+              "location": "testSteps.Navigation.iGoToTheHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-23T11:33:20.152Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5046699200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "framework.Hooks.beforeScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 106,
+        "name": "Successfully sign in",
+        "description": "",
+        "id": "login-form;successfully-sign-in",
+        "after": [
+          {
+            "result": {
+              "duration": 558103800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "framework.Hooks.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 30084619800,
+              "status": "passed"
+            },
+            "line": 107,
+            "name": "I am not logged in",
+            "match": {
+              "location": "testSteps.Membership.iAmNotLoggedIn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "Unique name:2020-05-23_123356_981@gmail.com:"
+            ],
+            "result": {
+              "duration": 135837800,
+              "status": "passed"
+            },
+            "line": 108,
+            "name": "I provide email \"unique\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"unique\"",
+                  "offset": 16
+                }
+              ],
+              "location": "testSteps.Membership.iProvideEmail(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 66005400,
+              "status": "passed"
+            },
+            "line": 109,
+            "name": "I provide password \"Arfle\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Arfle\"",
+                  "offset": 19
+                }
+              ],
+              "location": "testSteps.Membership.iProvidePassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 54011400,
+              "status": "passed"
+            },
+            "line": 110,
+            "name": "I sign up",
+            "match": {
+              "location": "testSteps.Membership.iSignUp()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1603171600,
+              "status": "passed"
+            },
+            "line": 111,
+            "name": "I see the logout form",
+            "match": {
+              "location": "testSteps.Membership.iSeeTheLogoutForm()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 30048799200,
+              "status": "passed"
+            },
+            "line": 112,
+            "name": "I do not see the login form",
+            "match": {
+              "location": "testSteps.Membership.iDoNotSeeTheLoginForm()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1751960500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I go to the home page",
+            "match": {
+              "location": "testSteps.Navigation.iGoToTheHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-23T11:34:29.450Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5116743400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "framework.Hooks.beforeScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 114,
+        "name": "Log Out",
+        "description": "  In order to reduce dependency on existing data, it signs-up first\n  Clearly this is not a nice thing to do to the Live database",
+        "id": "login-form;log-out",
+        "after": [
+          {
+            "result": {
+              "duration": 565147800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "framework.Hooks.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 30060936200,
+              "status": "passed"
+            },
+            "line": 117,
+            "name": "I am not logged in",
+            "match": {
+              "location": "testSteps.Membership.iAmNotLoggedIn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "Unique name:2020-05-23_123506_381@gmail.com:"
+            ],
+            "result": {
+              "duration": 138351600,
+              "status": "passed"
+            },
+            "line": 118,
+            "name": "I provide email \"unique\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"unique\"",
+                  "offset": 16
+                }
+              ],
+              "location": "testSteps.Membership.iProvideEmail(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 66000000,
+              "status": "passed"
+            },
+            "line": 119,
+            "name": "I provide password \"farfl3\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"farfl3\"",
+                  "offset": 19
+                }
+              ],
+              "location": "testSteps.Membership.iProvidePassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 65998200,
+              "status": "passed"
+            },
+            "line": 120,
+            "name": "I sign up",
+            "match": {
+              "location": "testSteps.Membership.iSignUp()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1338143200,
+              "status": "passed"
+            },
+            "line": 121,
+            "name": "I log out",
+            "match": {
+              "location": "testSteps.Membership.iLogOut()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 960218600,
+              "status": "passed"
+            },
+            "line": 122,
+            "name": "I see the login form",
+            "match": {
+              "location": "testSteps.Membership.iSeeTheLoginForm()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 30021381000,
+              "status": "passed"
+            },
+            "line": 123,
+            "name": "I do not see the logout form",
+            "match": {
+              "location": "testSteps.Membership.iDoNotSeeTheLogoutForm()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1706543600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I go to the home page",
+            "match": {
+              "location": "testSteps.Navigation.iGoToTheHomePage()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-05-23T11:35:39.539Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5049364600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "framework.Hooks.beforeScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 125,
+        "name": "Log in",
+        "description": "  In order to reduce dependency on existing data, it signs-up first\n  Clearly this is not a nice thing to do to the Live database",
+        "id": "login-form;log-in",
+        "after": [
+          {
+            "result": {
+              "duration": 562943600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "framework.Hooks.afterScenario(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 30079300800,
+              "status": "passed"
+            },
+            "line": 128,
+            "name": "I am not logged in",
+            "match": {
+              "location": "testSteps.Membership.iAmNotLoggedIn()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "output": [
+              "Unique name:2020-05-23_123616_376@gmail.com:"
+            ],
+            "result": {
+              "duration": 140021500,
+              "status": "passed"
+            },
+            "line": 129,
+            "name": "I provide email \"unique\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"unique\"",
+                  "offset": 16
+                }
+              ],
+              "location": "testSteps.Membership.iProvideEmail(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 69001100,
+              "status": "passed"
+            },
+            "line": 130,
+            "name": "I provide password \"P1Pick\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"P1Pick\"",
+                  "offset": 19
+                }
+              ],
+              "location": "testSteps.Membership.iProvidePassword(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 61999300,
+              "status": "passed"
+            },
+            "line": 131,
+            "name": "I sign up",
+            "match": {
+              "location": "testSteps.Membership.iSignUp()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5043392700,
+              "status": "passed"
+            },
+            "line": 132,
+            "name": "I log out",
+            "match": {
+              "location": "testSteps.Membership.iLogOut()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1961886100,
+              "status": "passed"
+            },
+            "line": 133,
+            "name": "I provide that email address",
+            "match": {
+              "location": "testSteps.Membership.iProvideThatEmailAddress()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 88003500,
+              "status": "passed"
+            },
+            "line": 134,
+            "name": "I provide that password",
+            "match": {
+              "location": "testSteps.Membership.iProvideThatPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 86006700,
+              "status": "passed"
+            },
+            "line": 135,
+            "name": "I log in",
+            "match": {
+              "location": "testSteps.Membership.iLogIn()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1226392600,
+              "status": "passed"
+            },
+            "line": 136,
+            "name": "I see the logout form",
+            "match": {
+              "location": "testSteps.Membership.iSeeTheLogoutForm()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 30035243000,
+              "status": "passed"
+            },
+            "line": 137,
+            "name": "I do not see the login form",
+            "match": {
+              "location": "testSteps.Membership.iDoNotSeeTheLoginForm()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          }
+        ]
+      }
+    ],
+    "name": "Login form",
+    "description": "  As a user\n  So that I can become a member\n  I want to be able to register (sign-in), log in, and out",
+    "id": "login-form",
+    "keyword": "Feature",
+    "uri": "file:src/test/features/login-out/membership.feature",
+    "tags": [
+      {
+        "name": "@login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

@@ -77,29 +77,21 @@ public class Membership {
     public void iSeeThatTheProblemIs(String arg0) {
         String errorMsg = "";
         boolean result;
-        String actual = getPageObject().getErrorFlag();
+        String actual = getPageObject().getStatusMessage().toLowerCase();
         switch (arg0.toLowerCase()) {
-            case "missed credentials":
-                errorMsg = String.format(
-                        "Expected the error to be :%s:, or :%s:. It was :%s:",
-                        "mtEmail", "mtPwd", actual
-                );
-                result = (
-                        actual.equalsIgnoreCase("mtEmail") || actual.equalsIgnoreCase("mtPwd")
-                );
-                Assert.assertTrue(errorMsg, result);
-                break;
             case "bad credentials":
+            case "missed credentials":
+                String option1 = "Please provide a valid email address";
+                String option2 = "A valid password contains only";
                 errorMsg = String.format(
-                        "Expected the error to be :%s:, or :%s:. It was :%s:",
-                        "badEmail", "badPwd", actual
+                        "Expected the status to contain :%s:, or :%s:. It was :%s:",
+                        option1, option2, actual
                 );
                 result = (
-                        actual.equalsIgnoreCase("badEmail") || actual.equalsIgnoreCase("badPwd")
+                        actual.contains(option1.toLowerCase()) || actual.contains(option2.toLowerCase())
                 );
                 Assert.assertTrue(errorMsg, result);
                 break;
-
             default:
                 Assert.fail("Verification for problem : " + arg0.toLowerCase() + ": has not been implemented");
         }
@@ -123,5 +115,15 @@ public class Membership {
     @And("I provide that password")
     public void iProvideThatPassword() {
         getPageObject().setPasswordField(thatPassword);
+    }
+
+    @And("the password field contains {string}")
+    public void thePasswordFieldContains(String expectedContents) {
+        Assert.assertEquals("The password field contains unexpected data", expectedContents, getPageObject().getPasswordField());
+    }
+
+    @And("the email field contains {string}")
+    public void theEmailFieldContains(String expectedContents) {
+        Assert.assertEquals("The password field contains unexpected data", expectedContents, getPageObject().getEmailAddressField());
     }
 }

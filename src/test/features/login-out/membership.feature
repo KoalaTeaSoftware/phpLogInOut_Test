@@ -5,11 +5,13 @@ Feature: Login form
   I want to be able to register (sign-in), log in, and out
 
   Background:
-    Given I go to the home page
+    Given I go to the default page
 
   Scenario: Not logged-in view
     When I am not logged in
     Then I see the login form
+    And the password field contains ""
+    And the email field contains ""
     And I do not see the logout form
 
   Scenario Outline: Miss out credentials when logging in
@@ -18,8 +20,10 @@ Feature: Login form
     And I provide password "<password>"
     And I log in
     Then I see the login form
-    And I do not see the logout form
     And I see that the problem is "missed credentials"
+    And the password field contains ""
+    And the email field contains "<address>"
+    And I do not see the logout form
     Examples:
       | address | password |
       |         |          |
@@ -32,14 +36,29 @@ Feature: Login form
     And I provide password "<password>"
     And I sign up
     Then I see the login form
-    And I do not see the logout form
     And I see that the problem is "missed credentials"
+    And the password field contains ""
+    And the email field contains "<address>"
+    And I do not see the logout form
     Examples:
       | address | password |
       |         |          |
       | a@b.com |          |
       |         | qwerty   |
 
+#   ToDo:
+#  Scenario Outline: The form prevents malformed input
+#  The form applies sizes constraints and patter constraints on the input fields
+#  More thought needs to be put into the difference between use of the action via the form, and directly (mischeviously)
+#    Given I am not logged in
+#    When I provide email "<address>"
+#    And I provide password "<password>"
+#    And I log in
+#    Then I see the login form
+#    And I see that the problem is "bad credentials"
+#    Examples:
+#      | address | password        | comment
+#      | a@b.com | qwertyuiopasdfg | because the form clips the parameter, this gives unmatched creds
 
   Scenario Outline: Bad credentials when logging in
   The password has to be a reasonable length, and be nothing other than letters and numbers
@@ -51,15 +70,16 @@ Feature: Login form
     And I provide password "<password>"
     And I log in
     Then I see the login form
-    And I do not see the logout form
     And I see that the problem is "bad credentials"
+    And the password field contains ""
+    And the email field contains "<address>"
+    And I do not see the logout form
     Examples:
-      | address | password        |
-      | a@b.com | a               |
-      | a@b.com | qwertyuiopasdfg |
-      | a@b.com | qf~             |
-      | a@b.com | ~               |
-      | a@b.com | qwe rt          |
+      | address | password | comment           |
+      | a@b.com | a        | no enough letters |
+      | a@b.com | qf~      | illegal character |
+      | a@b.com | ~        | illegal character |
+      | a@b.com | qwe rt   | illegal character |
 
   Scenario Outline: Bad credentials when signing in
   The password has to be a reasonable length, and be nothing other than letters and numbers
@@ -71,15 +91,17 @@ Feature: Login form
     And I provide password "<password>"
     And I sign up
     Then I see the login form
-    And I do not see the logout form
     And I see that the problem is "bad credentials"
+    And the password field contains ""
+    And the email field contains "<address>"
+    And I do not see the logout form
     Examples:
-      | address | password        |
-      | a@b.com | a               |
-      | a@b.com | qwertyuiopasdfg |
-      | a@b.com | qf~             |
-      | a@b.com | ~               |
-      | a@b.com | qwe rt          |
+      | address | password        | comment            |
+      | a@b.com | a               | not enough letters |
+      | a@b.com | qwertyuiopasdfg | too many letters   |
+      | a@b.com | qf~             | illegal character  |
+      | a@b.com | ~               | illegal character  |
+      | a@b.com | qwe rt          | illegal character  |
 
   Scenario: Successfully sign in
     Given I am not logged in
